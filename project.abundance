@@ -11,137 +11,14 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.9784031413612566,
+            "y": 0.4686567164179104,
             "uniqueID": 1748676005304,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "7ccf4279-06e3-4538-823d-fdab84ae0dc4"
-                }
-            ],
-            "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Molecule",
-            "name": "Molecule",
-            "x": 0.38481675392670156,
-            "y": 0.5343283582089552,
-            "uniqueID": 1748676162341,
             "ioValues": [],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-            "topLevel": false,
-            "allAtoms": [
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 0.98,
-                    "y": 0.5,
-                    "uniqueID": 1748676161704,
-                    "ioValues": [],
-                    "description": "Connect geometry here to make it available in the next level up. "
-                }
-            ],
-            "allConnectors": [],
-            "fileTypeVersion": 1,
-            "compiledBom": {}
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.49738219895287955,
-            "y": 0.7582089552238805,
-            "uniqueID": 1748676182738,
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 10
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
-            "atomType": "Color",
-            "name": "Color",
-            "x": 0.6361256544502618,
-            "y": 0.7731343283582089,
-            "uniqueID": "23a8c506-f77f-4dff-85c4-906727a175c4",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1748676182738
-                }
-            ],
-            "description": "Changes the color of the shape.",
-            "selectedColorIndex": 2
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.08965968586387435,
-            "y": 0.4089552238805971,
-            "uniqueID": "c562653e-815e-402b-bacd-a3065de8a311",
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.22709424083769633,
-            "y": 0.32238805970149254,
-            "uniqueID": "7ccf4279-06e3-4538-823d-fdab84ae0dc4",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "c562653e-815e-402b-bacd-a3065de8a311"
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
+            "description": "Connect geometry here to make it available in the next level up. "
         }
     ],
-    "allConnectors": [
-        {
-            "ap1Name": "Geometry",
-            "ap2Name": "x length",
-            "ap2Primary": false,
-            "ap1ID": 1748676162341,
-            "ap2ID": 1748676182738
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1748676182738,
-            "ap2ID": "23a8c506-f77f-4dff-85c4-906727a175c4"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": "c562653e-815e-402b-bacd-a3065de8a311",
-            "ap2ID": "7ccf4279-06e3-4538-823d-fdab84ae0dc4"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": "7ccf4279-06e3-4538-823d-fdab84ae0dc4",
-            "ap2ID": 1748676005304
-        }
-    ],
+    "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": [],
