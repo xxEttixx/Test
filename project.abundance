@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1748676005304,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1748676182738
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -44,16 +49,35 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.5176701570680629,
-            "y": 0.3253731343283582,
+            "x": 0.5261780104712042,
+            "y": 0.47462686567164175,
             "uniqueID": 1748676182738,
             "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 10
+                },
                 {
                     "name": "y length",
                     "ioValue": 10
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.5837696335078534,
+            "y": 0.191044776119403,
+            "uniqueID": "23a8c506-f77f-4dff-85c4-906727a175c4",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1748676182738
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 2
         }
     ],
     "allConnectors": [
@@ -63,10 +87,24 @@
             "ap2Primary": false,
             "ap1ID": 1748676162341,
             "ap2ID": 1748676182738
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1748676182738,
+            "ap2ID": 1748676005304
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1748676182738,
+            "ap2ID": "23a8c506-f77f-4dff-85c4-906727a175c4"
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
