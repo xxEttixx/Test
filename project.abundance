@@ -113,15 +113,15 @@
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 90
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 90
+                    "ioValue": 0
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 90
+                    "ioValue": 0
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -161,7 +161,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3"
                 },
                 {
                     "name": "height",
@@ -192,6 +192,13 @@
             "ap2Primary": true,
             "ap1ID": "8baa30fa-b4ba-447b-a53a-44b49567046a",
             "ap2ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3",
+            "ap2ID": "5c07cf08-dece-465f-868c-7c2f394f9111"
         },
         {
             "ap1Name": "geometry",
