@@ -67,8 +67,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5824607329842931,
-            "y": 0.17313432835820897,
+            "x": 0.5837696335078534,
+            "y": 0.1373134328358209,
             "uniqueID": "c5f0503e-18ce-482e-afba-6498a2a70d05",
             "ioValues": [
                 {
@@ -103,13 +103,13 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.569371727748691,
-            "y": 0.8328358208955224,
+            "x": 0.6472513089005236,
+            "y": 0.7044776119402986,
             "uniqueID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "8baa30fa-b4ba-447b-a53a-44b49567046a"
+                    "ioValue": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
                 },
                 {
                     "name": "x-axis degrees",
@@ -129,17 +129,17 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6982984293193718,
-            "y": 0.6746268656716418,
+            "x": 0.5484293193717277,
+            "y": 0.6149253731343284,
             "uniqueID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3"
+                    "ioValue": "8baa30fa-b4ba-447b-a53a-44b49567046a"
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 15
                 },
                 {
                     "name": "yDist",
@@ -147,10 +147,28 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 3
+                    "ioValue": 0
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.8167539267015707,
+            "y": 0.7432835820895521,
+            "uniqueID": "5c07cf08-dece-465f-868c-7c2f394f9111",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "height",
+                    "ioValue": 30
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
@@ -173,14 +191,14 @@
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": "8baa30fa-b4ba-447b-a53a-44b49567046a",
-            "ap2ID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3"
+            "ap2ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3",
-            "ap2ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
+            "ap1ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725",
+            "ap2ID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3"
         }
     ],
     "unitsKey": "MM",
