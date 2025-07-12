@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": 1748676182738
+                    "ioValue": "7ccf4279-06e3-4538-823d-fdab84ae0dc4"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -49,8 +49,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.5261780104712042,
-            "y": 0.47462686567164175,
+            "x": 0.49738219895287955,
+            "y": 0.7582089552238805,
             "uniqueID": 1748676182738,
             "ioValues": [
                 {
@@ -67,8 +67,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.5837696335078534,
-            "y": 0.191044776119403,
+            "x": 0.6361256544502618,
+            "y": 0.7731343283582089,
             "uniqueID": "23a8c506-f77f-4dff-85c4-906727a175c4",
             "ioValues": [
                 {
@@ -78,6 +78,38 @@
             ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 2
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.08965968586387435,
+            "y": 0.4089552238805971,
+            "uniqueID": "c562653e-815e-402b-bacd-a3065de8a311",
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.22709424083769633,
+            "y": 0.32238805970149254,
+            "uniqueID": "7ccf4279-06e3-4538-823d-fdab84ae0dc4",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "c562653e-815e-402b-bacd-a3065de8a311"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
@@ -90,17 +122,24 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 1748676182738,
-            "ap2ID": 1748676005304
+            "ap2ID": "23a8c506-f77f-4dff-85c4-906727a175c4"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 1748676182738,
-            "ap2ID": "23a8c506-f77f-4dff-85c4-906727a175c4"
+            "ap1ID": "c562653e-815e-402b-bacd-a3065de8a311",
+            "ap2ID": "7ccf4279-06e3-4538-823d-fdab84ae0dc4"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "7ccf4279-06e3-4538-823d-fdab84ae0dc4",
+            "ap2ID": 1748676005304
         }
     ],
     "unitsKey": "MM",
