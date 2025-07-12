@@ -14,11 +14,91 @@
             "x": 0.9784031413612566,
             "y": 0.4686567164179104,
             "uniqueID": 1748676005304,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "c5f0503e-18ce-482e-afba-6498a2a70d05"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.4267015706806283,
+            "y": 0.3283582089552239,
+            "uniqueID": "5cf7ad66-3f5c-4ad7-86f6-c6c3ad76df59",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 30
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Schiene",
+            "x": 0.20942408376963348,
+            "y": 0.4089552238805971,
+            "uniqueID": "f194db82-60fd-450c-8b83-f180bec70220",
+            "ioValues": [],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "1008d154-4cb1-41c1-b2d7-238f8f5e70e3",
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5857329842931938,
+            "y": 0.22686567164179106,
+            "uniqueID": "c5f0503e-18ce-482e-afba-6498a2a70d05",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "5cf7ad66-3f5c-4ad7-86f6-c6c3ad76df59"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 5
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "5cf7ad66-3f5c-4ad7-86f6-c6c3ad76df59",
+            "ap2ID": "c5f0503e-18ce-482e-afba-6498a2a70d05"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "c5f0503e-18ce-482e-afba-6498a2a70d05",
+            "ap2ID": 1748676005304
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": [],
