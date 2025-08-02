@@ -17,7 +17,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "c5f0503e-18ce-482e-afba-6498a2a70d05"
+                    "ioValue": "917d790c-3b4e-49e1-94fe-0a8655c42642"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -85,8 +85,8 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.42081151832460734,
-            "y": 0.7014925373134329,
+            "x": 0.29581151832460734,
+            "y": 0.7343283582089553,
             "uniqueID": "8baa30fa-b4ba-447b-a53a-44b49567046a",
             "ioValues": [
                 {
@@ -103,25 +103,25 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.6472513089005236,
-            "y": 0.7044776119402986,
+            "x": 0.46335078534031415,
+            "y": 0.8507462686567163,
             "uniqueID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
+                    "ioValue": "8baa30fa-b4ba-447b-a53a-44b49567046a"
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 90
+                    "ioValue": 0
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 90
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 90
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -129,17 +129,17 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.5484293193717277,
-            "y": 0.6149253731343284,
+            "x": 0.7447643979057591,
+            "y": 0.7313432835820896,
             "uniqueID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "8baa30fa-b4ba-447b-a53a-44b49567046a"
+                    "ioValue": "5c07cf08-dece-465f-868c-7c2f394f9111"
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 15
+                    "ioValue": -15
                 },
                 {
                     "name": "yDist",
@@ -147,7 +147,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 1
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -155,8 +155,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.8167539267015707,
-            "y": 0.7432835820895521,
+            "x": 0.5962041884816754,
+            "y": 0.764179104477612,
             "uniqueID": "5c07cf08-dece-465f-868c-7c2f394f9111",
             "ioValues": [
                 {
@@ -169,6 +169,24 @@
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.6858638743455497,
+            "y": 0.45970149253731346,
+            "uniqueID": "917d790c-3b4e-49e1-94fe-0a8655c42642",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "c5f0503e-18ce-482e-afba-6498a2a70d05"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
         }
     ],
     "allConnectors": [
@@ -181,17 +199,17 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "geometry1",
             "ap2Primary": false,
             "ap1ID": "c5f0503e-18ce-482e-afba-6498a2a70d05",
-            "ap2ID": 1748676005304
+            "ap2ID": "917d790c-3b4e-49e1-94fe-0a8655c42642"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": "8baa30fa-b4ba-447b-a53a-44b49567046a",
-            "ap2ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
+            "ap2ID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3"
         },
         {
             "ap1Name": "geometry",
@@ -202,10 +220,24 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725",
+            "ap2ID": "917d790c-3b4e-49e1-94fe-0a8655c42642"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725",
-            "ap2ID": "c3c7edfd-c459-4420-9d8d-cf4ef9f03be3"
+            "ap1ID": "5c07cf08-dece-465f-868c-7c2f394f9111",
+            "ap2ID": "466fa1b8-3ee5-46d6-b1cf-43b2b7283725"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "917d790c-3b4e-49e1-94fe-0a8655c42642",
+            "ap2ID": 1748676005304
         }
     ],
     "unitsKey": "MM",
